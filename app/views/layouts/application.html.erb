@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Gamehub</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>GAMEHUB</title>
 </head>
 <body>
+  <div class="navbar">
+    <ul>
+      <li><%= link_to "GAMEHUB", root_path %></li>
+      <li><%= link_to "Clubs", clubs_path(@index) %></li>
+      <li style="float:right"><%= link_to "Sign in", 'users/new' %></li>
+    </ul>
+  </div>
 
 <%= yield %>
 

@@ -1,63 +1,45 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>GAMEHUB</title>
-    <link rel="stylesheet" type="text/css" href="styles/index.css">
-  </head>
-  <body>
-    <header>
-      <ul>
-        <li><a href="#home" id="name">GAMEHUB</a></li>
-        <li><%= link_to "Clubs", clubs_path(@index) %></li>
-        <li style="float:right"><a class="active" href="#about">Sign in</a></li>
-      </ul>
-    </header>
-    <div id="googlemaps"></div>
-    <div id="contactform">
-      <div id="input_form">
-        <input type="text" placeholder="Къде/какво ми се играе?" autocomplete="off">
-      </div>
-    </div>
+<!-- <div id="googlemaps"></div> -->
+<div id="contactform">
+  <div id="input_form">
+    <input type="text" placeholder="Къде/какво ми се играе?" autocomplete="off">
+  </div>
+</div>
 
-  </body>
+<!-- <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
-  <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
 
-  <script type="text/javascript">
+var position = [42.69766088956656, 23.318090949707084];
 
-  var position = [42.69766088956656, 23.318090949707084];
+function showGoogleMaps() {
 
-  function showGoogleMaps() {
+    var latLng = new google.maps.LatLng(position[0], position[1]);
 
-      var latLng = new google.maps.LatLng(position[0], position[1]);
+    var mapOptions = {
+        zoom: 16, // initialize zoom level - the max value is 21
+        streetViewControl: false, // hide the yellow Street View pegman
+        scaleControl: true, // allow users to zoom the Google Map
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        center: latLng
+    };
 
-      var mapOptions = {
-          zoom: 16, // initialize zoom level - the max value is 21
-          streetViewControl: false, // hide the yellow Street View pegman
-          scaleControl: true, // allow users to zoom the Google Map
-          mapTypeId: google.maps.MapTypeId.ROADMAP,
-          center: latLng
-      };
+    map = new google.maps.Map(document.getElementById('googlemaps'),
+        mapOptions);
 
-      map = new google.maps.Map(document.getElementById('googlemaps'),
-          mapOptions);
+    // Show the default red marker at the location
+    marker = new google.maps.Marker({
+        position: latLng,
+        map: map,
+        draggable: false,
+        animation: google.maps.Animation.DROP
+    });
+}
 
-      // Show the default red marker at the location
-      marker = new google.maps.Marker({
-          position: latLng,
-          map: map,
-          draggable: false,
-          animation: google.maps.Animation.DROP
-      });
-  }
-
-  google.maps.event.addDomListener(window, 'load', showGoogleMaps);
-  </script>
-</html>
+google.maps.event.addDomListener(window, 'load', showGoogleMaps);
+</script>
 
 
-
+ -->
 
 
 

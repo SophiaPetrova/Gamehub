@@ -1,0 +1,23 @@
+<div class="login-page">
+<div class="form">
+  <form class="register-form">
+    <input type="text" placeholder="име"/>
+    <input type="password" placeholder="парола"/>
+    <input type="password" placeholder="Повтори парола"/>
+    <input type="text" placeholder="е-мейл"/>
+    <button>създай!</button>
+    <p class="message">Вече регистрирани? <a href="#">Впиши ме</a></p>
+  </form>
+  <form class="login-form">
+    <input type="text" placeholder="потребителско име"/>
+    <input type="password" placeholder="парола"/>
+    <button>влез</button>
+    <p class="message">Не си регистриран? <a href="#">Създай акаунт</a></p>
+  </form>
+</div>
+</div>
+<script type="text/javascript">
+  $('.message a').click(function(){
+  $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+  });
+</script>
